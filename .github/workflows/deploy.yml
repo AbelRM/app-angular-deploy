@@ -30,4 +30,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm run ng -- deploy --repo=https://github.com/AbelRM/app-angular-deploy.git --name="AbelRM" --email="jhanmaquera@gmail.com" --base-href=/app-angular-deploy/
+          npx ng deploy --base-href=/app-angular-deploy/
+        # npm run ng -- deploy --repo=https://github.com/AbelRM/app-angular-deploy.git --name="AbelRM" --email="jhanmaquera@gmail.com" --base-href=/app-angular-deploy/
